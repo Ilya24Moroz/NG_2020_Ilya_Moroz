@@ -5,11 +5,11 @@ using namespace std;
 int main()
 {
     int a, b, c;
-    cout << "Vvedite 1 chislo:";
+    cout << "Enter 1 number:";
     cin >> a;
-    cout << "Vvedite 2 chislo:";
+    cout << "Enter 2 number:";
     cin >> b;
-    cout << "Vvedite 3 chislo:";
+    cout << "Enter 3 number:";
     cin >> c;
     if(c == 1)
     {

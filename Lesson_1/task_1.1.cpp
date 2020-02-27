@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
     int a, b;
-    cout << "Vvedite 1 chislo: ";
+    cout << "Enter 1 number: ";
     cin >> a;
-    cout << "Vvedite 2 chislo: ";
+    cout << "Enter 2 number: ";
     cin >> b;
     cout << "Resault: ";
     cout << a + b;

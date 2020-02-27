@@ -5,11 +5,11 @@ using namespace std;
 int main()
 {
     int a, b, c;
-    cout << "Vvedite 1 zarplaty: ";
+    cout << "Enter 1 salary: ";
     cin >> a;
-    cout << "Vvedite 2 zarplaty: ";
+    cout << "Enter 2 salary: ";
     cin >> b;
-    cout << "Vvedite 3 zarplaty: ";
+    cout << "Enter 3 salary: ";
     cin >> c;
     if(a > b and b > c and a > c )
     {

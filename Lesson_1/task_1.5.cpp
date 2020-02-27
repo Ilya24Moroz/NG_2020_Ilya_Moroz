@@ -6,11 +6,11 @@ int main()
 {
     int a, b, c, d;
     float x1, x2;
-    cout << "Vvedite a: ";
+    cout << "Enter a: ";
     cin >> a;
-    cout << "Vvedite b: ";
+    cout << "Enter b: ";
     cin >> b;
-    cout << "Vvedite c: ";
+    cout << "Enter c: ";
     cin >> c;
     d = (b * b) - 4 * a * c;
     cout << d << endl;

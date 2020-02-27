@@ -5,11 +5,11 @@ using namespace std;
 int main()
 {
     int n, m, k;
-    cout << "Vvedite kolichestvo shusek: ";
+    cout << "Ónter the number of cones: ";
     cin >> n;
-    cout << "Vvedite kolichestvo oreshkov:";
+    cout << "Enter the number of nuts:";
     cin >> m;
-    cout << "Vvedite kolichestvo oreshkov na zimy:";
+    cout << "Enter the number of nuts for the winter:";
     cin >> k;
     if(m * n >= k)
     {

@@ -5,22 +5,22 @@ using namespace std;
 int main()
 {
     int a;
-    cout << "Vvedite vashy zarplaty: ";
+    cout << "Enter your salary: ";
     cin >> a;
     if(a > 999999)
     {
-        cout << "Ti millioner!" << endl;
+        cout << "You are a millionaire!" << endl;
     }
     if(a < 1000000)
     {
         if(a > 999)
         {
-            cout << "Horosho" << endl;
+            cout << "Good" << endl;
         }
     }
     if(a < 1000)
     {
-        cout << "Rabotai bolshe" << endl;
+        cout << "Work more" << endl;
     }
-    cout << "no ti molodec";
+    cout << "but you done";
 }
