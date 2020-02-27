@@ -12,22 +12,21 @@ int main()
     cin >> b;
     cout << "Enter c: ";
     cin >> c;
-    d = (b * b) - 4 * a * c;
-    cout << d << endl;
+    d = pow(b, 2) - 4 * a * c;
     if (d > 0)
     {
-    x1 = (-(b) + sqrt(d)) / 2 * a;
-    cout << x1 << endl;
-    x2 = (-(b) - sqrt(d)) / 2 * a;
-    cout << x2 << endl;
+        x1 = (-b + sqrt(d)) / (2 * a);
+        cout << x1 << endl;
+        x2 = (-b - sqrt(d)) / (2 * a);
+        cout << x2 << endl;
     }
     if (d == 0)
     {
-    x1 = (-(b)+ sqrt(d)) / 2 * a;
-    cout << x1 << endl;
+        x1 = (-b + sqrt(d)) / (2 * a);
+        cout << x1 << endl;
     }
     if (d < 0)
     {
-    cout << "net korney!!!!";
+        cout << "net korney!!!!";
     }
 }
