@@ -11,20 +11,19 @@ int main()
     cin >> b;
     cout << "Enter 3 number:";
     cin >> c;
-    if(c == 1)
+    switch
     {
-        cout << a + b;
-    }
-    if(c == 2)
-    {
-      cout << a - b;
-    }
-    if(c == 3)
-    {
-      cout << a * b;
-    }
-    if(c == 4)
-    {
-      cout << a / b;
+        case 1:
+            cout << a + b;
+            break;
+        case 2:
+            cout << a - b;
+            break;
+        case 3:
+            cout << a * b;
+            break;
+        case 4:
+            cout << a / b;
+            break;
     }
 }
