@@ -7,15 +7,15 @@ int main()
     int a;
     cout << "Enter your salary: ";
     cin >> a;
-    if(a > 999999)
+    if(a > 999)
     {
-        cout << "You are a millionaire!" << endl;
-    }
-    if(a < 1000000)
-    {
-        if(a > 999)
+        if(a > 999999)
         {
-            cout << "Good" << endl;
+          cout << "You are a millionaire!" << endl;
+        }
+        if(a < 1000000)
+        {
+          cout << "Good" << endl;
         }
     }
     if(a < 1000)
