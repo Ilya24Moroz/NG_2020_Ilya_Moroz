@@ -15,19 +15,20 @@ int main()
     cout << "4: /" << endl;
     cout << "Enter a number to select an action:";
     cin >> c;
+    cout << "Resault: ";
     switch (c)
     {
         case 1:
-            cout << "Resault: " << a + b;
+            cout << a + b;
             break;
         case 2:
-            cout << "Resault: " << a - b;
+            cout << a - b;
             break;
         case 3:
-            cout << "Resault: " << a * b;
+            cout << a * b;
             break;
         case 4:
-            cout << "Resault: " << a / b;
+            cout << a / b;
             break;
         default:
             cout << "Error: You entered an invalid value";

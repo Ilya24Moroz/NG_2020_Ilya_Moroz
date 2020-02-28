@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     int a, b, c, d;
+    cout << "This program checks if the value is an equation" << endl;
     cout << "Enter 1 number: ";
     cin >> a;
     cout << "Enter 2 number: ";
