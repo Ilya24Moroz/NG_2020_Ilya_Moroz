@@ -4,15 +4,18 @@ using namespace std;
 
 int main()
 {
-    int a;
-    int i = 0;
+    int num;
+    int j = 0;
     cout << "Enter the number: ";
-    cin >> a;
-    while(i <= a){
-        cout << i;
-        if(i < a){
-           cout << ",";
+    cin >> num;
+
+
+    for(int i = 0; i <= num; i++){
+      cout << i;
+      while (j < num){
+            cout << ",";
+            break;
         }
-        i++;
+        j++;
     }
 }
