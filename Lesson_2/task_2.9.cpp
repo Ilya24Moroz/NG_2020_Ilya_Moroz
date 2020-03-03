@@ -4,31 +4,27 @@ using namespace std;
 
 int main()
 {
-    int s;
-    int f = 1;
+    int tree_size;
+    int stars = 1;
     cout << "Enter the size of the tree: ";
-    cin >> s;
-    int e = s;
+    cin >> tree_size;
+    int freespace = tree_size;
 
-    for(int a = 0; a < s; a++)
+    for(int tree_iteration = 0; tree_iteration < tree_size; tree_iteration++)
     {
-        e--;
-        for(int i = 0; i < e; i++){
+        freespace--;
+        for(int freespace_iteration = 0; freespace_iteration < freespace; freespace_iteration++){
             cout << " ";
         }
-        for(int i = 0; i < f; i++){
+        for(int stars_iteration = 0; stars_iteration < stars; stars_iteration++){
             cout << "*";
         }
-        f += 2;
-        for(int i = s - 1; i < s; i++){
-            cout << endl;
-        }
+        stars += 2;
+        cout << endl;
     }
-    s--;
-    for(int i = 0; i < s; i++){
+
+    for(int space_iteration = 0; space_iteration < tree_size - 1; space_iteration++){
         cout << " ";
     }
-    for(int i = 0; i < 1; i++){
-        cout << "*";
-    }
+    cout << "*";
 }
