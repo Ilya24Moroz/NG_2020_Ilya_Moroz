@@ -4,41 +4,40 @@ using namespace std;
 
 int main()
 {
-    int a;
-    int j = 1;
+    int pyramids_size;
+    int stars = 1;
     cout << "Enter the size of the pyramids: ";
-    cin >> a;
-    for(int i=0; i<a; i++)
+    cin >> pyramids_size;
+    for(int pyramid_to_bottom = 0; pyramid_to_bottom < pyramids_size; pyramid_to_bottom++)
     {
-        for(int i = 0; i<j; i++){
+        for(int counter_stars_up = 0; counter_stars_up < stars; counter_stars_up++){
             cout << "*";
         }
         cout << endl;
-        j++;
+        stars++;
     }
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
-    for(int i = 0; i < a; i++)
+    for(int pyramid_to_top = 0; pyramid_to_top < pyramids_size; pyramid_to_top++)
     {
-        for(int i = 1; i < j; i++){
+        for(int counter_stars_down = 1; counter_stars_down < stars; counter_stars_down++){
             cout << "*";
         }
         cout << endl;
-        j--;
+        stars--;
     }
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
-    int e = 0;
-    j = a;
-    for(int i = 0; i < a; i++)
+    int freespace = 0;
+    stars = pyramids_size;
+    for(int counter_iteration = 0; counter_iteration < pyramids_size; counter_iteration++)
     {
-        for(int i = 0; i < e; i++){
+        for(int counter_freespace = 0; counter_freespace < freespace; counter_freespace++){
             cout << " ";
         }
-        e++;
-
-        for(int i = 0; i < j; i++){
+        freespace++;
+        for(int counter_inverse = 0; counter_inverse < stars; counter_inverse++){
             cout << "*";
         }
         cout << endl;
-        j--;
+        stars--;
     }
 }
