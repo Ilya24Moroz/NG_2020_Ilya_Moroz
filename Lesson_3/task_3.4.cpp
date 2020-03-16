@@ -5,28 +5,28 @@ using namespace std;
 int main()
 {
     int num;
-    int maxV = 0;
+    int maxValue = 0;
     int stars[5];
 
-    for(int i = 0; i < 5; i++){
+    for(int counter_input = 0; counter_input < 5; counter_input++){
         cout << "Enter number in column: ";
-        cin >> stars[i];
+        cin >> stars[counter_input];
     }
 
-    for (int i = 0; i < 5; i++){
-        if (stars[i] > maxV){
-            maxV = stars[i];
+    for (int maxV_counter = 0; maxV_counter < 5; maxV_counter++){
+        if (stars[maxV_counter] > maxValue){
+            maxValue = stars[maxV_counter];
         }
     }
 
-    for(int j = 0; j < maxV; j++){
-        for(int b = 0; b < 5; b++){
-            if(j < stars[b]){
+    for(int counter_output = 0; counter_output < maxValue; counter_output++){
+        for(int row = 0; row < 5; row++){
+            if(counter_output < stars[row]){
                 cout << "*";
             }else{
                 cout << " ";
             }
-    }
-    cout << endl;
+        }
+        cout << endl;
     }
 }

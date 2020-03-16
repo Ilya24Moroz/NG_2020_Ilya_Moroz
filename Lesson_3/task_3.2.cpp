@@ -8,14 +8,13 @@ int main()
     int cardNum, money;
 
     while(true){
-    cout << "Enter card number: ";
-    cin >> cardNum;
-
-    cout << "How much do you want to put on the card: ";
-    cin >> money;
-    bank[cardNum-1] += money;
-    for(int i = 0; i < 10; i++){
-    cout << "card number" << i+1 << ": " << bank[i] << endl;
-    }
+        cout << "Enter card number: ";
+        cin >> cardNum;
+        cout << "How much do you want to put on the card: ";
+        cin >> money;
+        bank[cardNum - 1] += money;
+        for(int counter = 0; counter < 10; counter++){
+            cout << "card number" << counter + 1 << ": " << bank[counter] << endl;
+        }
     }
 }

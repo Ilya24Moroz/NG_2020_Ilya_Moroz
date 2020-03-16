@@ -6,21 +6,19 @@ int main()
 {
     int schools[10];
     int school;
-    for(int i = 0; i < 10; i++){
-    cout << "Enter school number: ";
-    cin >> schools[i];
+    for(int counter_input= 0; counter_input < 10; counter_input++){
+        cout << "Enter school number: ";
+        cin >> schools[counter_input];
     }
     cout << "Enter your school number: ";
     cin >> school;
-    for(int i = 0; i < 10; i++){
-    if(schools[i] == school){
-    cout << "I know this school!" << endl;
-    goto skip;
-    }else{
+    for(int counter_output = 0; counter_output < 10; counter_output++){
+        if(schools[counter_output] == school){
+            cout << "I know this school!" << endl;
+            goto skip;
+        }
+    }
     cout << "I don't know this school" << endl;
-    goto skip;
-    }
-    }
     skip:
-    cout << "Program finished";
+        cout << "Program finished";
 }
