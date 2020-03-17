@@ -10,11 +10,15 @@ int main()
     while(true){
         cout << "Enter card number: ";
         cin >> cardNum;
-        cout << "How much do you want to put on the card: ";
-        cin >> money;
-        bank[cardNum - 1] += money;
-        for(int counter = 0; counter < 10; counter++){
-            cout << "card number" << counter + 1 << ": " << bank[counter] << endl;
+        if(cardNum > 0 and cardNum <= 10){
+            cout << "How much do you want to put on the card: ";
+            cin >> money;
+            bank[cardNum - 1] += money;
+            for(int counter = 0; counter < 10; counter++){
+                cout << "card number" << counter + 1 << ": " << bank[counter] << endl;
+            }
+        }else{
+            cout << "Error: Card number not found"
         }
     }
 }
