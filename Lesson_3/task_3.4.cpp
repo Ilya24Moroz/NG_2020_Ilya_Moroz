@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    int num;
     int maxValue = 0;
     int stars[5];
 
