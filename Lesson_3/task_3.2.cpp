@@ -18,7 +18,7 @@ int main()
                 cout << "card number" << counter + 1 << ": " << bank[counter] << endl;
             }
         }else{
-            cout << "Error: Card number not found"
+            cout << "Error: Card number not found";
         }
     }
 }
