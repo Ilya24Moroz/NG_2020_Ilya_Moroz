@@ -11,7 +11,7 @@ int main()
 
     while (str[index] != 0)
     {
-        if (str[index] != ' '){
+        if (str[index] >= 'a' && str[index] <= 'z'){
             len++;
         }else {
             if (len > maxlen){
