@@ -10,9 +10,6 @@ int main()
     for(int counter_input = 0; counter_input < 5; counter_input++){
         cout << "Enter number in column: ";
         cin >> stars[counter_input];
-    }
-
-    for (int maxV_counter = 0; maxV_counter < 5; maxV_counter++){
         if (stars[maxV_counter] > maxValue){
             maxValue = stars[maxV_counter];
         }
