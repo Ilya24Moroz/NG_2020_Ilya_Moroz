@@ -10,10 +10,13 @@ int main()
     cin.getline(str, 100);
 
     while(str[index] != 0){
-        if(str[index] >= 'a' && str[index] <= 'z'){
+        if((str[index] >= 'a' && str[index] <= 'z') || (str[index] >= 'A' && str[index] <= 'Z')){
             counterWords++;
         }
-        if(!(str[index] >= 'a' and str[index] <= 'z') and counterWords > 0){
+        if(!((str[index] >= 'a' && str[index] <= 'z') ||
+            (str[index] >= 'A' && str[index] <= 'Z')) &&
+            counterWords > 0)
+        {
             word++;
             counterWords = 0;
         }
