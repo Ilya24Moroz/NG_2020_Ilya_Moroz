@@ -22,6 +22,9 @@ int main()
         }
         index++;
     }
-    word++;
+    if(counterWords > 0){
+        word++;
+    }
+
     cout << "Words in your string: " << word << endl;
 }
