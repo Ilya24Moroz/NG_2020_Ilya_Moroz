@@ -9,6 +9,8 @@ Mentor::Mentor()
 {
 
 }
+
+void Mentor::addStudent(){
     string userName;
     string userSurname;
     int userAge;
@@ -16,7 +18,6 @@ Mentor::Mentor()
     string userStudyForm;
     Student Nstudent;
 
-void Mentor::addStudent(){
     cout << "Enter your name: ";
     cin >> userName;
     Nstudent.setName(userName);
@@ -40,9 +41,9 @@ void Mentor::addStudent(){
     addStudent(Nstudent);
 }
 void Mentor::addStudent(Student student){
-    for(int i =0; i<30; i++){
-        if(studentsArr[i].getName() == " "){
-            studentsArr[i] = student;
+    for(int index = 0; index<30; index++){
+        if(getStudentsArr(index).getName() == ""){
+            setStudentsArr(student, index);
             return;
         }
     }
@@ -76,14 +77,15 @@ void Mentor::deleteStudent(){
 }
 void Mentor::deleteStudent(Student deleteStudent){
     for(int index = 0; index < 30; index++){
-        if(studentsArr[index].getName() == deleteStudent.getName() &&
-                studentsArr[index].getSurname() == deleteStudent.getSurname() &&
-                studentsArr[index].getAge() == deleteStudent.getAge()){
-            studentsArr[index].setName(" ");
-            studentsArr[index].setSurname(" ");
-            studentsArr[index].setAge(0);
-            studentsArr[index].setSex(" ");
-            studentsArr[index].setStudyForm(" ");
+        if(getStudentsArr(index).getName() == deleteStudent.getName() &&
+                getStudentsArr(index).getSurname() == deleteStudent.getSurname() &&
+                getStudentsArr(index).getAge() == deleteStudent.getAge()){
+            deleteStudent.setName("");
+            deleteStudent.setSurname("");
+            deleteStudent.setAge(0);
+            deleteStudent.setSex("");
+            deleteStudent.setStudyForm("");
+            setStudentsArr(deleteStudent, index);
         }
     }
     cout << "Student deleted!!!" << endl;
@@ -91,14 +93,13 @@ void Mentor::deleteStudent(Student deleteStudent){
 void Mentor::findStudent(string surname){
     for(int i = 0; i<30; i++){
         if(studentsArr[i].getSurname() == surname){
-            cout << "Name: " << studentsArr[i].getName() << endl;
-            cout << "Surname: " << studentsArr[i].getSurname() << endl;
-            cout << "Age: " << studentsArr[i].getAge() << endl;
-            cout << "Sex: " << studentsArr[i].getSex() << endl;
-            cout << "Study form: " << studentsArr[i].getStudyForm() << endl;
+            cout << "Name: " << getStudentsArr(i).getName() << endl;
+            cout << "Surname: " << getStudentsArr(i).getSurname() << endl;
+            cout << "Age: " << getStudentsArr(i).getAge() << endl;
+            cout << "Sex: " << getStudentsArr(i).getSex() << endl;
+            cout << "Study form: " << getStudentsArr(i).getStudyForm() << endl;
             return;
         }
     }
+
 }
-
-

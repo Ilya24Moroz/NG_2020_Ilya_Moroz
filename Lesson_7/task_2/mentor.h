@@ -24,6 +24,9 @@ public:
 
     string getFacultet(){return facultet;}
     void setFacultet(string Facultet){facultet = Facultet;}
+
+    Student getStudentsArr(int index){return studentsArr[index];}
+    Student setStudentsArr(Student student, int index){studentsArr[index] = student;}
 private:
     string nameMentor;
     string surnameMentor;
