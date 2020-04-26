@@ -12,20 +12,20 @@ class Student
 
 public:
     Student();
-    string getName(){return name;}
-    void setName(string userName){name = userName;}
+    string getName();
+    void setName(string userName);
 
-    string getSurname(){return surname;}
-    void setSurname(string userSurname){surname = userSurname;}
+    string getSurname();
+    void setSurname(string userSurname);
 
-    int getAge(){return age;}
-    void setAge(int userAge){age = userAge;}
+    int getAge();
+    void setAge(int userAge);
 
-    string getSex(){return sex;}
-    void setSex(string userSex){sex = userSex;}
+    string getSex();
+    void setSex(string userSex);
 
-    string getStudyForm(){return studyForm;}
-    void setStudyForm(string userStudyForm){studyForm = userStudyForm;}
+    string getStudyForm();
+    void setStudyForm(string userStudyForm);
 
 private:
     string name;
